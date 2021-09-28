@@ -9,6 +9,7 @@
     font-family: 'My Lucida', Console;
 }
 
+
 body {
     background: linear-gradient(to bottom, #efefef, white) no-repeat;
 }
@@ -23,6 +24,7 @@ a {
 }
 
 body > header {
+    width: 100%;
     margin-bottom: 20px;
     background: white;
     box-shadow: 1px 0px 8px rgb(200, 200, 200);
@@ -209,6 +211,11 @@ nav.browse a, nav.music a {
     padding-top: 2px;
 }
 
+.row {
+    width: 100%;
+
+}
+
 nav a.heavy { background: url("../img/icon/heavy.png") no-repeat 0px; }
 nav a.recent { background: url("../img/icon/recent.png") no-repeat 0px; }
 nav a.top { background: url("../img/icon/top.png") no-repeat 0px; }
@@ -217,5 +224,11 @@ nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; 
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
 
+
+@media only screen and (max-width: 720px) {
+    #menu {
+        display: none;
+    }
+}
 
 
